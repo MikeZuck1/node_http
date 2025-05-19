@@ -13,7 +13,7 @@ Objectif : retourner un texte simple avec les bons en-têtes.
 
 ## Exercice 2 – Routage via une table d’objets
 Objectif : éviter les multiples `if/else`.  
-1. Crée un objet qui mappe les routes (`/`, `/about`, `/contact`) à des fonctions.  
+1. Crée un objet qui mappe les routes (`/`, `/about`, `/contact`) à des fonctions.
 2. Recherche `req.url` dans cet objet. Si introuvable, retourne un 404.  
 3. Le code total doit faire moins de 30 lignes.
 
