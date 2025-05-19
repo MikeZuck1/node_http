@@ -4,9 +4,9 @@
 
 ## Exercice 1 – Serveur minimal  
 Objectif : retourner un texte simple avec les bons en-têtes.
-1. Crée un serveur sur le port 3000.  
+1. Crée un serveur sur le port 3000.
 2. `/` → réponse **200** avec le texte "Hello HTTP Server".  
-3. Ajoute un en-tête `Content-Type: text/plain`.  
+3. Ajoute un en-tête `Content-Type: text/plain`.
 4. Affiche en console chaque requête reçue (méthode + URL).
 
 ---
