@@ -3,13 +3,9 @@ const PORT = 3000;
 
 const server = http.createServer((req, res) => {
   if (req.url === "/") {
-    res.writeHead(200, {
-      "Content-Type": "text/plain",
-    });
+    res.writeHead(200, { "Content-Type": "text/plain" });
   } else {
-    res.writeHead(404, {
-      "Content-Type": "text/plain",
-    });
+    res.writeHead(404, { "Content-Type": "text/plain" });
     res.end("404 Not Found\n");
     console.log(`404 Not Found: ${req.method} ${req.url}`);
     return;
