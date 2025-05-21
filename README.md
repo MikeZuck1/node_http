@@ -29,7 +29,7 @@ Objectif : analyser les paramètres d’URL.
 
 ## Exercice 4 – Lire le corps d’une requête POST
 Objectif : récupérer du JSON envoyé par un client.  
-1. POST `/echo` avec un JSON → retourne le même JSON.  
+1. POST `/echo` avec un JSON → retourne le même JSON.
 2. Assemble les `data` en chunks, puis `JSON.parse`.  
 3. Si le body n’est pas JSON, retourne un code 415 (Unsupported Media Type).
 
