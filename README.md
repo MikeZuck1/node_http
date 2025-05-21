@@ -12,9 +12,9 @@ Objectif : retourner un texte simple avec les bons en-têtes.
 ---
 
 ## Exercice 2 – Routage via une table d’objets
-Objectif : éviter les multiples `if/else`.  
+Objectif : éviter les multiples `if/else`.
 1. Crée un objet qui mappe les routes (`/`, `/about`, `/contact`) à des fonctions.
-2. Recherche `req.url` dans cet objet. Si introuvable, retourne un 404.  
+2. Recherche `req.url` dans cet objet. Si introuvable, retourne un 404.
 3. Le code total doit faire moins de 30 lignes.
 
 ---
@@ -27,7 +27,7 @@ Objectif : analyser les paramètres d’URL.
 
 ---
 
-## Exercice 4 – Lire le corps d’une requête POST  
+## Exercice 4 – Lire le corps d’une requête POST
 Objectif : récupérer du JSON envoyé par un client.  
 1. POST `/echo` avec un JSON → retourne le même JSON.  
 2. Assemble les `data` en chunks, puis `JSON.parse`.  
