@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
 
   if (url.pathname === "/greet") {
     res.writeHead(200, { "Content-Type": "text/plain" });
-    res.end(`Hello, ${name}!\n` + `presence : ${present}\n`);
+    res.end(`Hello, ${name}!\n` + `Are you present ? ${present}\n`);
   } else {
     res.writeHead(404, { "Content-Type": "text/plain" });
     res.end("404 Not Found\n");
