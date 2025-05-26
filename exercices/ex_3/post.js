@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
         res.end("Data received successfully");
       } catch (error) {
         res.statusCode = 415; // Bad Request
-        res.end("Unsupported Media Type");
+        res.end("Unsupported Media Type. Try again.");
       }
     });
   }
