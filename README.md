@@ -28,39 +28,39 @@ Objectif : analyser les paramètres d’URL.
 ---
 
 ## Exercice 4 – Lire le corps d’une requête POST
-Objectif : récupérer du JSON envoyé par un client.  
+Objectif : récupérer du JSON envoyé par un client.
 1. POST `/echo` avec un JSON → retourne le même JSON.
-2. Assemble les `data` en chunks, puis `JSON.parse`.  
+2. Assemble les `data` en chunks, puis `JSON.parse`. 
 3. Si le body n’est pas JSON, retourne un code 415 (Unsupported Media Type).
 
 ---
 
-## Exercice 5 – Mini serveur de fichiers statiques  
-Objectif : servir des fichiers depuis un dossier `public/`.  
-1. Une requête `/public/monfichier.ext` doit renvoyer ce fichier.  
+## Exercice 5 – Mini serveur de fichiers statiques
+Objectif : servir des fichiers depuis un dossier `public/`.
+1. Une requête `/public/monfichier.text` doit renvoyer ce fichier.  
 2. Déduis le `Content-Type` selon l’extension (.html, .css, .jpg, etc.).  
 3. Utilise `fs.createReadStream` pour ne pas tout charger en mémoire.  
 4. Retourne un 404 si le fichier est absent.
 
 ---
 
-## Exercice 6 – Remplacement de variable dans un HTML  
-Objectif : injecter un nom dans un modèle HTML.  
-1. Crée un `index.html` contenant `{{title}}`.  
+## Exercice 6 – Remplacement de variable dans un HTML
+Objectif : injecter un nom dans un modèle HTML.
+1. Crée un `index.html` contenant `{{title}}`. 
 2. Avant d’envoyer le fichier, remplace `{{title}}` par “Mon site Node”.  
 3. N’utilise pas de moteur de template, juste `String.replace`.
 
 ---
 
-## Exercice 7 – En-têtes personnalisés & cache  
-Objectif : gérer le cache navigateur.  
+## Exercice 7 – En-têtes personnalisés & cache
+Objectif : gérer le cache navigateur.
 1. Pour les assets statiques (`.css`, `.js`, images), ajoute l’en-tête  
    `Cache-Control: public, max-age=86400`.  
 2. Vérifie via l’onglet Réseau que le fichier est bien mis en cache.
 
 ---
 
-## Exercice 8 – Redirection simple (301)  
+## Exercice 8 – Redirection simple (301)
 Objectif : utiliser le code de statut 301.  
 1. Une visite à `/old-about` doit rediriger vers `/about`.  
 2. Ajoute un en-tête `Location`.
@@ -75,7 +75,7 @@ Objectif : envoyer des données ligne par ligne.
 
 ---
 
-## Exercice 10 – Mini API REST (sans Express)  
+## Exercice 10 – Mini API REST (sans Express)
 Objectif : corriger l’exo précédent et compléter l’API.  
 1. Crée un tableau `users` en mémoire.  
 2. `GET  /users` → retourne la liste des utilisateurs (JSON).  

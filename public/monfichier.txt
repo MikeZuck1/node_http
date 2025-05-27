@@ -1,0 +1,28 @@
+Bienvenue dans mon fichier de test !
+
+Ce fichier contient plusieurs lignes pour bien tester le streaming avec createReadStream().
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Voici quelques données intéressantes :
+- Ligne 1 : Première donnée importante
+- Ligne 2 : Deuxième information cruciale  
+- Ligne 3 : Troisième élément à retenir
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Section technique :
+{
+  "nom": "Fichier de test",
+  "version": "1.0",
+  "description": "Contenu pour tester le streaming Node.js",
+  "chunks": "Ce fichier sera lu par petits morceaux"
+}
+
+Fin du fichier de test.
+--- 
+Total : environ 1000 caractères pour bien voir les chunks en action !
