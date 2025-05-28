@@ -46,8 +46,8 @@ Objectif : servir des fichiers depuis un dossier `public/`.
 
 ## Exercice 6 – Remplacement de variable dans un HTML
 Objectif : injecter un nom dans un modèle HTML.
-1. Crée un `index.html` contenant `{{title}}`. 
-2. Avant d’envoyer le fichier, remplace `{{title}}` par “Mon site Node”.  
+1. Crée un `index.html` contenant `{{title}}`. ✅
+2. Avant d’envoyer le fichier, remplace `{{title}}` par “Mon site Node”. 
 3. N’utilise pas de moteur de template, juste `String.replace`.
 
 ---
@@ -62,7 +62,7 @@ Objectif : gérer le cache navigateur.
 
 ## Exercice 8 – Redirection simple (301)
 Objectif : utiliser le code de statut 301.  
-1. Une visite à `/old-about` doit rediriger vers `/about`.  
+1. Une visite à `/old-about` doit rediriger vers `/about`.
 2. Ajoute un en-tête `Location`.
 
 ---
