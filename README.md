@@ -30,7 +30,7 @@ Objectif : analyser les paramètres d’URL.
 ## Exercice 4 – Lire le corps d’une requête POST
 Objectif : récupérer du JSON envoyé par un client.
 1. POST `/echo` avec un JSON → retourne le même JSON.
-2. Assemble les `data` en chunks, puis `JSON.parse`. 
+2. Assemble les `data` en chunks (petits morceaux), puis `JSON.parse`. 
 3. Si le body n’est pas JSON, retourne un code 415 (Unsupported Media Type).
 
 ---
@@ -54,14 +54,14 @@ Objectif : injecter un nom dans un modèle HTML.
 
 ## Exercice 7 – En-têtes personnalisés & cache
 Objectif : gérer le cache navigateur.
-1. Pour les assets statiques (`.css`, `.js`, images), ajoute l’en-tête  
-   `Cache-Control: public, max-age=86400`.  
+1. Pour les assets statiques (`.css`, `.js`, images), ajoute l’en-tête
+   `Cache-Control: public, max-age=86400`.
 2. Vérifie via l’onglet Réseau que le fichier est bien mis en cache.
 
 ---
 
-## Exercice 8 – Redirection simple (301)
-Objectif : utiliser le code de statut 301.  
+## Exercice 8 – Redirection simple (301 - Moved Permanently)
+Objectif : utiliser le code de statut 301.
 1. Une visite à `/old-about` doit rediriger vers `/about`.
 2. Ajoute un en-tête `Location`.
 
@@ -70,7 +70,7 @@ Objectif : utiliser le code de statut 301.
 ## Exercice 9 – Streaming JSON massif  
 Objectif : envoyer des données ligne par ligne.  
 1. Crée un tableau de 10 000 objets.  
-2. Envoie-le en NDJSON (1 ligne JSON par objet) via `/bigdata`.  
+2. Envoie-le en NDJSON (1 ligne JSON par objet) via `/bigdata`.
 3. Le client doit commencer à recevoir les données sans attendre la fin.
 
 ---
@@ -79,7 +79,7 @@ Objectif : envoyer des données ligne par ligne.
 Objectif : corriger l’exo précédent et compléter l’API.  
 1. Crée un tableau `users` en mémoire.  
 2. `GET  /users` → retourne la liste des utilisateurs (JSON).  
-3. `POST /users` → ajoute un nom depuis le body JSON, retourne un 201.  
+3. `POST /users` → ajoute un nom depuis le body JSON, retourne un 201 (created).  
 4. `GET  /users/ID` → retourne l’utilisateur avec cet ID ou 404.  
 5. Utilise une regex pour extraire `/users/(\d+)`.  
 6. Toujours sans Express.
