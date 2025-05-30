@@ -54,7 +54,7 @@ Objectif : injecter un nom dans un modèle HTML.
 
 ## Exercice 7 – En-têtes personnalisés & cache
 Objectif : gérer le cache navigateur.
-1. Pour les assets statiques (`.css`, `.js`, images), ajoute l’en-tête  
+1. Pour les assets statiques (`.css`, `.js`, images), ajoute l’en-tête
    `Cache-Control: public, max-age=86400`.
 2. Vérifie via l’onglet Réseau que le fichier est bien mis en cache.
 
