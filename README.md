@@ -69,7 +69,7 @@ Objectif : utiliser le code de statut 301.
 
 ## Exercice 9 – Streaming JSON massif  
 Objectif : envoyer des données ligne par ligne.  
-1. Crée un tableau de 10 000 objets.  
+1. Crée un tableau de 10 000 objets.
 2. Envoie-le en NDJSON (1 ligne JSON par objet) via `/bigdata`.
 3. Le client doit commencer à recevoir les données sans attendre la fin.
 
